@@ -1,0 +1,810 @@
+*
+{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-weight: 600;
+    font-family: "Arial",Sans-Serif ;
+    font-size: 16px;
+}
+button
+{
+    cursor: pointer;
+}
+
+
+
+
+#body-background
+{
+    display: inline !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the video covers the entire screen */
+    z-index: -1; /* Place the video behind other content */
+}
+header
+{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+}
+#header-container
+{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    width: 50%;
+}
+.headerAnchors
+{
+    text-decoration: none;
+    color:#fff;
+}
+#toggleDrawerBtn
+{
+    display: none;
+}
+#logo
+{
+    max-width: 90%;
+    height: auto;
+    margin-left: 20%;
+}
+#main-container
+{
+    display: flex;
+    justify-content: space-between;
+}
+#btn-container
+{
+    display: flex;
+    justify-content: center;
+}
+#photo-background
+{
+    margin-left: 2.5%;
+    max-width: auto;
+    height: auto;
+}
+aside
+{
+   align-self: flex-end;
+}
+h3
+{
+    color: #2e3992;
+    text-align: center;
+}
+p
+{
+    text-align: center;
+    color:#336e6a;
+    font-size: 17px;
+    line-height: 30px;
+}
+aside>h3
+{
+    font-size: 40px;
+    margin: 40px 50px;
+}
+aside>p
+{
+    margin: auto 50px;
+    margin-bottom: 150px;
+}
+.btnClass
+{
+   
+    background-color: #336e6a;
+    color: #fff;
+    width:48%;
+    height: 37px;
+    border-radius: 50px;;
+    font-weight: 100;
+    border: none;
+    margin-right: 0;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btnClass:hover
+{
+    color:#336e6a;
+    background-color: #fff;
+    cursor: pointer;
+}
+.btnClass:first-of-type
+{
+    margin-right: 17px;
+}
+#bottom-container
+{
+    background-color: #fff;
+    padding: 25px 50px;
+    padding-top: 5px;
+}
+#bottom-container>h3
+{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+#bottom-container>p
+{
+    font-size: 16px;
+}
+footer
+{
+    background-color: #336e6a;
+    height:100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+footer>a
+{
+    color: #fff !important;
+    text-decoration: none;
+}
+header.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; 
+    background-color: #336e6a;
+}
+
+
+
+#toggleDrawerBtn
+{
+    background: none;
+    border: none;
+    transform: scale(2);
+    color:#fff;
+}
+
+#drawer {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    right: -250px;
+    width: 250px;
+    background-color: #fff;
+    opacity: 0.7;
+    padding-top: 60px;
+    transition: right 0.3s ease;
+}
+
+#drawer.open {
+    right: 0;
+}
+
+.drawer-link {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #336e6a;
+}
+
+.justified-content
+{
+    margin:1rem 10%;
+}
+
+.privacy-h3, .privacy-p
+{
+    text-align: justify;
+    margin: 1.3rem 1px;
+}
+
+.privacy-h3
+{
+    text-transform: uppercase;
+    font-family: "Marcellus Sc";
+    color: #222222dd;
+    font-weight: 600;
+    font-size: 1.1rem;
+    letter-spacing: -0.7px;
+}
+.privacy-span
+{
+    font-size: 1.35rem;
+    font-family: "Marcellus Sc";
+}
+
+.privacy-p, .privacy-li
+{
+    color: #111;
+    font-weight: 200;
+    font-size: 0.9rem;
+}
+.privacy-li
+{
+    margin-left: 1.5%;
+    line-height: 2;
+}
+
+.privacy-h3:first-of-type
+{
+    margin-top: 2.5rem;
+}
+
+.privacy-h3:last-of-type
+{
+    margin-bottom: 2.5rem;
+}
+
+.blank-page
+{
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:20rem;
+    flex-direction: column;
+}
+.blank-page h2
+{
+    color: #336e6a;
+    font-size: 2rem;
+    margin: 1rem;
+}
+.blank-page h3
+{
+    color: #111;
+    font-size: 1.2rem;
+}
+.faq-out-container
+{
+    display: flex !important;
+    background-color: #eee !important;
+    justify-content: space-between !important;
+    align-items: center;
+    padding:1.2rem;
+    border: none;
+    width: 100%;
+    box-sizing:content-box;
+    margin: 1rem 0px;
+    background-image: none !important;
+}
+.faq-out-container h3
+{
+    color: #000;
+    width: 90% !important;
+    text-align: left !important;
+    font-weight: 600;
+    font-size: 1.08rem;
+}
+.faq-out-container aside
+{
+    color: #000;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+.faq-out-container:hover
+{
+    border:0.2px solid black;
+}
+.faq-toggle-div
+{
+    font-weight: 200;
+    color: #222222dd;
+    margin: 1rem 2rem;
+    text-align: justify;
+    position: absolute;
+    display: none;
+}
+
+.visible {
+    display: block !important;
+    position: static !important;
+}
+
+.ourTeamImg
+{
+    height:200px;
+}
+
+
+.faq-article
+{
+    color: #222222dd;
+    margin-top: 4rem;
+}
+
+#about-main
+{
+    margin-top: 60px;
+    font-family: "Montserrat", sans-serif;
+}
+.ab-sect{
+    margin:20px auto;
+    width: 1100px;
+}
+#ab-article
+{
+    color: #333;
+    font-family: "Marcellus Sc";
+    font-size: 85%;
+    /* letter-spacing: 0.8px; */
+    text-transform: uppercase;
+    text-align: justify;
+    line-height: 26px;
+    margin-bottom: 40px;
+}
+.ab-h2
+{
+    font-family: "Marcellus Sc";
+    margin:20px;
+    margin-left: 0;
+    color: #333;
+}
+.ab-h6
+{
+    font-weight: 100;
+    margin-bottom: 20px;
+    font-size: 90%;
+    letter-spacing: 0.8px;
+    color: #54595f;
+}
+.ab-p
+{
+    color: #54595f;
+    font-size: 90%;
+    letter-spacing: 0.8px;
+    text-align: justify;
+    font-weight: 100;
+    line-height: 26px;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 40px;
+}
+.ab-span{
+    font-size: 22px;
+    font-family: "Marcellus Sc";
+    color: #333;
+}
+.about-article
+{
+    font-size: 19px;
+
+}
+#about-article-container
+{
+    font-family: "Marcellus Sc";
+    margin-top: 20px;
+    font-size: 90%;
+}
+.about-bolder
+{
+    font-weight: 700;
+    font-size: 95%;
+    color: #444;
+    font-family: "Montserrat", sans-serif;
+}
+.ab-li
+{
+    font-weight: 100;
+    font-size: 90%;
+    letter-spacing: 0.8px;
+    text-align: justify;
+    line-height: 26px;
+    color: #54595f;
+    font-family: "Montserrat", sans-serif;
+    margin-left: 2%;
+}
+.ab-ol
+{
+    margin-bottom: 40px;
+}
+
+#c-main
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2% 0.5%;
+}
+#c-img
+{
+    width:30%;
+    margin-right: 10%;
+    margin-left: 5%;
+}
+.contact-double, .contact-single, #c-form
+{
+    width: 100%;
+}
+#contact-h2
+{
+    color: #336e6a;
+    margin:3rem 0px;
+    margin-left: 2%;
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+#contact-Us-container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:50%;
+}
+input, textarea, #c-submit
+{
+    padding:1rem 1.5rem;
+    font-weight: 100;
+    color: #444444;
+    margin:1%;
+}
+input:focus, textarea:focus
+{
+    outline: none;
+    border:0.2px solid red;
+    color: #111;
+}
+.contact-double input
+{
+    width:47%;
+}
+.contact-single input, textarea, #c-submit
+{
+    width:97%;
+}
+#c-submit
+{
+    background-color: #336e6a;
+    color: #fff;
+    font-size: 0.9rem;
+    border:none;
+    margin-bottom: 200px;
+}
+
+#outsider
+{
+    width:100%;
+    display: flex;
+    justify-content: center !important;
+    align-items: center;
+    margin: 70px 0;
+}
+
+#team-main{
+    width: 1100px;
+}
+.ourTeamCard
+{
+    background-color:#fff;
+    height:370px;
+    width:30%;
+    margin:10px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.5)
+}
+.ourTeamCard:hover .team-h5
+{
+    color:#2575fc;
+}
+.team-h5
+{
+    font-family: "Marcellus SC";
+    font-size: 19px;
+    line-height: 31px;
+    font-style: normal;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.ourTeamContainer
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+.ourTeamImg
+{
+    width:50%;
+}
+.linkContainer
+{
+    width:30px;
+    height: 30px;
+    margin: 0 8px;
+    background-color:#000;
+}
+.linkContainContainer
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.linkContainer 
+{
+    width: 30px !important;
+    height: 30px !important;
+    margin: 0 8px !important;
+    background-color: #000 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+}
+
+.linkContainer a 
+{
+    font-size: 18px;
+    color: #fff !important;
+    text-decoration: none;
+}
+
+.linkContainer:hover a 
+{
+    color: #2575fc !important; 
+}
+.linkContainer:hover
+{
+    border-radius: 50%;
+    background-color: #222;
+}
+.f-icon 
+{
+    color:#fff !important;
+    text-decoration: none !important;
+}
+.f-border
+{
+    padding:2px 4px !important;
+    border: 0.2px solid #fff !important;
+    margin: 0px 4px !important;
+}
+
+
+
+
+
+@media(max-width:1300px)
+{
+    #bottom-container
+    {
+        padding-left: 12px;
+        padding-right: 12px;
+        width: 100%;
+    }
+    
+}
+@media (max-width:1200px)
+{
+    .ab-sect
+    {
+        width: 100%;
+    }
+    #about-main{
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 60px;
+    }
+    #photo-background
+    {
+        width:48%;
+    }
+    aside 
+    {
+        width:52%;
+    }
+}
+@media(max-width:1100px)
+{
+    #main-container
+    {
+        flex-direction: column;
+    }
+    #btn-container
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+    #photo-background
+    {
+        width:90%;
+    }
+    aside 
+    {
+        width:90%;
+    }
+    #contact-Us-container
+    {
+        width:55%;
+    }
+    #c-img
+    {
+        width:28%;
+        margin-right: 13%;
+        margin-left: 4%;
+    }
+}
+
+@media (max-width: 930px) {
+    .headerAnchors {
+        display: none;
+    }
+
+    #toggleDrawerBtn
+    {
+        display: block;
+        margin-right: 5px;
+        padding:10px;
+    }
+
+    .justified-content
+    {
+        margin:1rem 7%;
+    }
+    #contact-Us-container
+    {
+        width:60%;
+    }
+    #c-img
+    {
+        width:25%;
+        margin-right: 11%;
+        margin-left: 4%;
+    }
+}
+
+@media(max-width:760px)
+{
+    .ourTeamContainer
+    {
+        flex-direction: column;  
+        align-items: center; 
+    }
+    .ourTeamCard
+    {
+        width:90%;
+        height: 550px;
+    }
+}
+
+@media(max-width:700px)
+{
+    footer
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 30px;
+        justify-content: center;
+        height:200px;
+    }
+    #inside-footer
+    {
+        display: flex;
+    }
+    footer a
+    {
+        padding-bottom: 10px;
+       width: 100%; 
+       display: block;
+    }
+    #contact-Us-container
+    {
+        width:66%;
+    }
+    #c-img
+    {
+        width:25%;
+        margin-right: 6%;
+        margin-left: 3%;
+    }
+
+    .justified-content
+    {
+        margin:1rem 4.5%;
+    }
+    .faq-out-container
+    {
+        margin: 0rem 0px;
+       border-bottom: 0.5px solid black; 
+    }
+}
+
+@media(max-width:600px)
+{
+    #contact-Us-container
+    {
+        width:70%;
+    }
+    #c-img
+    {
+        width:25%;
+        margin-right: 3%;
+        margin-left: 2%;
+    }
+
+}
+
+@media(max-width:600px)
+{
+    #contact-Us-container
+    {
+        width:70%;
+    }
+    #c-img
+    {
+        width:25%;
+        margin-right: 3%;
+        margin-left: 2%;
+    }
+    #c-img
+    {
+        position: absolute;
+        display: none;
+    }
+    #contact-Us-container
+    {
+        width:90%;
+    }
+    input,textarea
+    {
+        font-size: 0.9rem;
+    }
+    #contact-h2
+    {
+        margin:4rem 0px;
+    }
+    #c-submit
+    {
+        margin-bottom: 220px;
+    }
+
+}
+
+@media (max-width: 450px) {
+
+   
+    #main-container {
+        flex-direction: column;
+    }
+
+    #btn-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .faq-out-container
+    {
+        margin: 0rem 0px;
+       border-bottom: 0.5px solid black; 
+    }
+}
+
+@media(max-width:300px)
+{
+    #main-container
+    {
+        justify-content: center;
+        align-items: center;
+    }
+    #bottom-container
+    {
+        justify-content: center;
+        align-items: center;
+        width:110%;
+    }
+    footer 
+    {
+        width:110%;
+    }
+}
+
+
+
+
