@@ -18,7 +18,10 @@ Welcome to Gift A Second Chance, a project dedicated to providing students with 
 
 ## Preview
 ![preview1](https://github.com/amrit467/giftASecondChoice/assets/85552327/51960878-9d52-4a99-a9df-b9fe537bdd3e)
+
 ![preview2](https://github.com/amrit467/giftASecondChoice/assets/85552327/ee3a9839-c08b-4ea2-99d6-cf2902b6896c)
+
 ![preview3](https://github.com/amrit467/giftASecondChoice/assets/85552327/9736994b-bd92-4756-a67c-78e102f5595c)
+
 ![preview4](https://github.com/amrit467/giftASecondChoice/assets/85552327/f5049848-f7ec-4401-b03f-3135668efef1)
 
